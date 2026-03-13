@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Samuel Chibinji Mwanza - Web Developer and Tech Innovator from University of Zambia">
+    <title>Portfolio - Samuel Chibinji Mwanza</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     ============================================================
     ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
     CSC4035 Web Programming and Technologies
-
+    
     Instructions:
     1. Complete all TODO sections below
     2. Use semantic HTML5 elements
@@ -24,22 +24,25 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
+        <nav class="nav container">
+            <!-- Navigation with logo and links -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Samuel Mwanza</a>
             </div>
+            
+            <!-- Mobile menu toggle (checkbox hack for CSS-only hamburger) -->
+            <input type="checkbox" id="nav-toggle" class="nav__toggle">
+            <label for="nav-toggle" class="nav__toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,18 +50,10 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
+            <div class="hero__content container">
+                <h1>Samuel Chibinji Mwanza</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Software Engineer | Data Scientist 
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -66,42 +61,43 @@
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
-                <h2>About Me</h2>
+                <h2 class="section-title">About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile.jpg" alt="Profile photo of Samuel Chibinji Mwanza, Software Engineer at University of Zambia">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            I'm Samuel Chibinji Mwanza, a passionate Software Engineer/Data Scientist and final-year Computer Science student at the University of Zambia. My journey into software engineering and data science began with a curiosity about how technology can solve real-world problems in my home country of Zambia.
                         </p>
-                        <h3>Skills</h3>
+                        <p>
+                            My background combines formal education in computer science with self-directed learning in modern technologies. I'm particularly interested in educational technology and healthcare systems, believing these sectors have immense potential for digital transformation in Zambia. I've developed applications that address local challenges, from pharmacy management to student performance tracking.
+                        </p>
+                        <p>
+                            What excites me most about software development is the ability to create solutions that reach people where they are. Whether it's a teacher in a rural school checking student progress or a pharmacist managing inventory, well-crafted software applications can make a real difference. My goal is to continue building tools that are not only technically sound but also accessible and meaningful to Zambian users.
+                        </p>
+                        <p>
+                            I believe my unique perspective as a Zambian student developer allows me to understand both the technical requirements and the local context needed to create truly effective solutions. I'm eager to collaborate on projects that combine technology with social impact, particularly in education and healthcare.
+                        </p>
+                        
+                        <h3>Technical Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li>HTML5 & Semantic Markup</li>
+                            <li>CSS3 & Responsive Design</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Python & Django</li>
+                            <li>Java</li>
+                            <li>PHP & MySQL</li>
+                            <li>UI/UX Design Principles</li>
+                            <li>Git & Version Control</li>
+                            <li>RESTful APIs</li>
+                            <li>Mobile App Development</li>
+                            <li>Database Design</li>
+                            <li>Machine Learning (scikit-learn)</li>
+                            <li>Data Analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -110,25 +106,16 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
-                <h2>My Projects</h2>
+                <h2 class="section-title">My Projects</h2>
                 <div class="projects__grid">
-                    <!-- Project Card 1 -->
+                    <!-- Project Card 1: Pharmacy POS System -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/pharmacy-pos.jpg" alt="Pharmacy Point of Sale System dashboard showing inventory management interface">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Pharmacy Point of Sale System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A comprehensive POS system designed for Zambian pharmacies. Features include inventory tracking, expiry date management, sales reporting, and low-stock alerts. Built with React for the frontend and Node.js with MongoDB for the backend. Includes role-based access for pharmacists and cashiers. This system helps pharmacies reduce medication waste through expiry tracking and optimize inventory levels.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -137,15 +124,13 @@
                         </div>
                     </article>
 
-                    <!-- Project Card 2 -->
+                    <!-- Project Card 2: ZamPrep - Parent Classroom Performance Tracker -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/zamprep.jpg" alt="ZamPrep parent classroom performance tracker showing student grades and attendance">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>ZamPrep: Parent Classroom Performance Tracker</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A comprehensive web and mobile application that allows parents to monitor their children's academic progress in real-time. Teachers can update grades, attendance records, and behavioral notes, while parents receive weekly summaries and instant alerts about their child's performance. Features interactive data visualizations showing performance trends across subjects, comparative analytics with class averages, and personalized recommendations for improvement. Built with React Native for mobile, Django for backend, and PostgreSQL for database. Includes offline sync capability for schools with limited internet connectivity.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -154,15 +139,13 @@
                         </div>
                     </article>
 
-                    <!-- Project Card 3 -->
+                    <!-- Project Card 3: Student Dropout Risk Predictor -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/unza.jpeg" alt="Student dropout risk predictor dashboard showing analytics and risk scores">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>University Student Dropout Risk Predictor</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A machine learning-powered application that identifies students at risk of dropping out from Zambian universities. The system analyzes academic records, attendance patterns, socioeconomic factors, and engagement metrics to generate early warning risk scores. Provides actionable insights and intervention recommendations for university counselors and academic advisors. Includes a dashboard for visualizing risk factors across student populations and tracking intervention effectiveness. Built with Python, scikit-learn for machine learning models, Flask for the API, and React for the frontend dashboard.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -170,47 +153,34 @@
                             </div>
                         </div>
                     </article>
-
-                    <!-- TODO: Add more project cards if desired -->
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
-                <h2>Contact Me</h2>
+                <h2 class="section-title">Contact Me</h2>
                 <form class="contact__form" action="#" method="POST">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name <span class="required">*</span></label>
                         <input
                             type="text"
                             id="name"
                             name="name"
                             required
-                            placeholder="Your Name"
+                            placeholder="Chibinji Mwanza"
                             minlength="2"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email <span class="required">*</span></label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             required
-                            placeholder="your.email@example.com"
+                            placeholder="chibinji@gmail.com"
                         >
                     </div>
                     <div class="form-group">
@@ -223,13 +193,13 @@
                         >
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">Message <span class="required">*</span></label>
                         <textarea
                             id="message"
                             name="message"
                             required
-                            rows="5"
-                            placeholder="Your message..."
+                            rows="6"
+                            placeholder="I'd like to discuss a project opportunity..."
                             minlength="10"
                         ></textarea>
                     </div>
@@ -241,20 +211,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2026 Samuel Chibinji Mwanza. All rights reserved.</p>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                <a href="#" aria-label="University of Zambia" class="social-link">UNZA</a>
             </nav>
+            <a href="#home" class="back-to-top">Back to Top ↑</a>
         </div>
     </footer>
 </body>

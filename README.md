@@ -127,22 +127,100 @@ Before submitting, verify:
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
+**Name:** Samuel Chibinji Mwanza
+**Student ID:** 2021465934
+**Design Theme:** Professional grey and blue color scheme with clean, modern aesthetics suitable for a tech portfolio
 
 ### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
+CSS Custom Properties - For colors, spacing, typography, and transitions
+
+Flexbox - Used in navigation, hero section, footer, skills list, and project card links
+
+CSS Grid - Used in about section (2-column layout on tablet/desktop) and projects grid (1-2-3 columns responsive)
+
+Media Queries - Breakpoints at 480px, 768px, 1024px, and 1200px
+
+CSS Animations - Fade-in effects on hero section, staggered animations on project cards and skills
+
+CSS Transitions - Hover effects on buttons, cards, and navigation links
+
+CSS-only Hamburger Menu - Using checkbox hack (no JavaScript)
+
+Print Stylesheet - Optimized for printing with hidden navigation and interactive elements
+
+Dark Mode Support - CSS variables ready for dark mode toggle
+
+Accessibility Features - Focus indicators, skip-to-content link, reduced motion support, high contrast mode
 
 ### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
+Challenge 1: Creating a responsive navigation that works well on all devices
+Solution: Implemented a mobile-first approach with a CSS-only hamburger menu using the checkbox hack. The navigation transforms from a hidden hamburger menu on mobile to a horizontal navigation bar on desktop, all without JavaScript.
+
+Challenge 2: Ensuring the bio section meets the 150+ word requirement while maintaining readability
+Solution: Structured the bio with four clear paragraphs covering background, interests, motivation, and unique perspective. Each paragraph flows naturally into the next, creating a compelling narrative about my journey as a Zambian software engineer.
+
+Challenge 3: Making project cards maintain consistent height with varying content
+Solution: Used CSS Grid for the project container to ensure equal height rows, and Flexbox within each card (display: flex; flex-direction: column;) to push the links to the bottom regardless of description length.
+
+Challenge 4: Implementing a professional color scheme that's both modern and accessible
+Solution: Chose a sophisticated grey and blue palette with sufficient contrast ratios (meeting WCAG guidelines). Used CSS variables throughout for easy maintenance and future dark mode implementation.
+
+Challenge 5: Creating smooth animations without impacting performance
+Solution: Used CSS transforms and opacity for animations (which are GPU-accelerated) instead of properties like left or top. Implemented prefers-reduced-motion media query to respect user accessibility preferences.
 
 ### Credits
-[List any images, fonts, or resources used with attribution]
+Images
+All images used in this portfolio are either personal photographs or screenshots of my own projects:
+
+profile.jpg – Personal photograph taken at University of Zambia campus
+
+pharmacy-pos.jpg – Original screenshot of Pharmacy Point of Sale System 
+
+zamprep.jpg – Original screenshot of a parent using the zamprep app with their child
+
+unza.jpeg – Photograph of University of Zambia campus. Own work taken at the Great East Road campus, Lusaka.
+
+Fonts
+No external fonts or font services (Google Fonts, Adobe Fonts, etc.) were used in this project. The site uses the native system font stack for optimal performance, cross-platform consistency, and readability:
+
+Resources
+The following documentation and online resources were consulted during development to ensure best practices and proper implementation:
+
+Mozilla Developer Network (MDN)
+
+HTML documentation for semantic structure and element usage
+
+CSS reference for properties, values, and browser support
+
+CSS Grid Layout guide for implementing responsive project cards
+
+Flexbox guide for navigation and footer layouts
+
+Accessibility guides for ARIA labels and focus management
+
+CSS-Tricks
+
+"A Complete Guide to Grid" – Referenced for advanced grid techniques and responsive breakpoints
+
+"A Complete Guide to Flexbox" – Used for understanding flex container and item properties
+
+"The Checkbox Hack" – Provided the foundation for the CSS-only hamburger menu implementation
+
+Web Accessibility Resources
+
+W3C Web Accessibility Initiative (WAI) – Guidelines for semantic HTML and keyboard navigation
+
+WebAIM – Contrast checking and accessibility best practices
+
+A11Y Project – Focus management and skip navigation links
+
+Validation Tools
+
+W3C HTML Validator – Used to ensure markup is error-free
+
+W3C CSS Validator – Used to validate all CSS properties and values
+
+WAVE Web Accessibility Tool – Used to verify accessibility compliance
 
 ---
 
